@@ -3,20 +3,15 @@ package com.devsuperior.dsclient.dto;
 import java.io.Serializable;
 import java.time.Instant;
 
-import javax.persistence.Column;
-
 import com.devsuperior.dsclient.entities.Client;
-
-//import javax.persistence.Column;
 
 public class ClientDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	public Long id;
 	public String name;
 	public String cpf;
-	public Double income; //renda
+	public Double income;
 	
-	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	public Instant birthDate;
 	
 	public Integer children;

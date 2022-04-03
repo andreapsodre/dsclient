@@ -21,9 +21,9 @@ public class Client implements Serializable {
 	public Long id;
 	public String name;
 	public String cpf;
-	public Double income; //renda
+	public Double income;
 	
-	//@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	public Instant birthDate;
 	
 	public Integer children;
